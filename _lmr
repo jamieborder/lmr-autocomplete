@@ -1,0 +1,21 @@
+#compdef lmr
+
+_lmr() {
+  local -a _lmr_verbs
+    _lmr_verbs=(
+        "prep-grids:build grids for simulation"
+        "prep-flow:build initial flow field for simulation"
+        "run-steady:run steady-state solver"
+        "snapshot2vtk:convert a snapshot to VTK format for visualisation"
+    )
+  
+  local curcontext="$curcontext" state line expl
+  local -A opt_args
+
+  _arguments -C '*:: :->verbs'
+
+  if (( CURRENT == 1 )); then
+    _describe -t commands "lmr verb" _lmr_verbs
+    return
+  fi
+}
