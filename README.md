@@ -15,6 +15,3 @@ cp _lmr ~/.zsh-completions/
 echo 'fpath=( ~/.zsh-completions $fpath )
 autoload -Uz compinit && compinit' >> ~/.zshrc
 ```
-
-echo 'fpath=( ~/.zsh-completions $fpath )
-autoload -Uz compinit && compinit' >> aaa
