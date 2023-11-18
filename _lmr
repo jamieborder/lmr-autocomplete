@@ -7,6 +7,12 @@ _lmr() {
         "prep-flow:build initial flow field for simulation"
         "run-steady:run steady-state solver"
         "snapshot2vtk:convert a snapshot to VTK format for visualisation"
+        "limiter2vtk:..."
+        "compute-norms:..."
+        "limiter2vtk:..."
+        "prep-mapped-cells:..."
+        "revision-id:..."
+        "check-jacobian:..."
     )
   
   local curcontext="$curcontext" state line expl

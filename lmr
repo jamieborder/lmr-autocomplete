@@ -4,7 +4,7 @@ _lmr()
     COMPREPLY=()
     cur="${COMP_WORDS[COMP_CWORD]}"
     prev="${COMP_WORDS[COMP_CWORD-1]}"
-    opts="prep-grids prep-flow run-steady snapshot2vtk"
+    opts="prep-grids prep-flow run-steady snapshot2vtk limiter2vtk compute-norms limiter2vtk prep-mapped-cells revision-id check-jacobian"
 
     if [[ ${prev} == "lmr" ]] ; then
         COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
